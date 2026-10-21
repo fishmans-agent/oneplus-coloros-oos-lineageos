@@ -1,0 +1,15 @@
+# Downloaded binaries (scripts/00-host-tools.sh)
+tools/
+# Firmware, OTAs, LineageOS builds
+oos/
+lineage/
+*.zip
+*.img
+# Phone backups and logs: per-device secrets (IMEI, EFS, keys, serial numbers)
+backup/
+userbackup/
+logs/*
+# Partition list has no secrets and the flash scripts need it
+!logs/partitions.txt
+# Generated modules
+build/
